@@ -3,6 +3,7 @@
 
 <head>
     @include('admin/header')
+    @livewireStyles
 </head>
 <body>
   <div class="container-scroller">
@@ -26,7 +27,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
+            @yield('content')
+          <!-- <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -34,7 +36,7 @@
                   <div class="row">
                     <div class="col-12">
                       <div class="table-responsive">
-                        <table id="example" class="display expandable-table" style="width:100%">
+                        <table class="display expandable-table" style="width:100%">
                           <thead>
                             <tr>
                               <th>Quote#</th>
@@ -47,6 +49,13 @@
                               <th></th>
                             </tr>
                           </thead>
+                          <td>BB</td>
+                          <td>BB</td>
+                          <td>BB</td>
+                          <td>BB</td>
+                          <td>BB</td>
+                          <td>BB</td>
+                          <td>BB</td>
                         </table>
                       </div>
                     </div>
@@ -55,7 +64,7 @@
                 </div>
               </div>
             </div>
-        </div>
+        </div> -->
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
@@ -93,6 +102,7 @@
   <script src="admin/js/dashboard.js"></script>
   <script src="admin/js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+  @livewireScripts
 </body>
 
 </html>
